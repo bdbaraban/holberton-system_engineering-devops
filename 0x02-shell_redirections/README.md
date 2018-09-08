@@ -1,1 +1,1 @@
-In this project, I learned about redirecting and manipulating files in the Shell and using special characters.
+In this project, I learned about manipulating files, redirecting files, and using special characters in the Shell.
