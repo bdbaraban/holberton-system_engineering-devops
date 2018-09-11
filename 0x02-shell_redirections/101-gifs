@@ -1,2 +1,2 @@
 #!/bin/bash
-export LC_ALL=C | find . -type f -name \*.gif -printf %f'\n' | sort -f | rev | cut -c 5- | rev 
+export LC_ALL=C; find . -type f -name \*.gif -printf %f'\n' | sort -f | rev | cut -c 5- | rev 
