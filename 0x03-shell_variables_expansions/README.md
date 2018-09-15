@@ -21,3 +21,5 @@ In this project, I learned about initialization files, variables and expansions 
 * `13-print_float`: Script that prints a number stored in the environment variable `NUM` with two decimal places.
 * `14-decimal_to_hexadecimal`: Script that converts a number in base 10 stored in the environment variable `DECIMAL` to base 16.
 * `100-rot13`: Script that encodes and decodes text using the rot13 encryption.
+* `101-odd`: Script that prints every other line from the input, starting with the first line.
+* `102-water_and_stir`: Script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result. `WATER` is in base `water`, `STIR` is in base `stir`, and the result is in base `behlnort`.
