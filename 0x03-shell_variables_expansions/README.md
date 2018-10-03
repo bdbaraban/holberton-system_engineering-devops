@@ -1,5 +1,7 @@
 In this project, I learned about initialization files, variables and expansions in the Shell as well as how to use the alias command.
 
+---
+
 * `0-alias`: Script that creates an alias named `ls` with value `rm *`.
 * `1-hello_you`: Script that prints `hello user`, where user is the current Linux user.
 * `2-path`: Script that adds `/action` to the `PATH`.

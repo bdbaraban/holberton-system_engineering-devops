@@ -1,5 +1,7 @@
 In this project, I learned about changing Linux user and file permissions in the Shell.
 
+---
+
 * `0-iam_betty`: Script that changes the user ID to `betty`.
 * `1-who_am_i`: Script that prints the effective userid of the current user.
 * `2-groups`: Script that prints all the groups the current user is a part of.

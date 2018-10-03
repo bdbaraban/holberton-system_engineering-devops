@@ -1,5 +1,7 @@
 In this project, I learned about the Shell, including how to navigate it, manipulate files, work with commands, and read man pages.
 
+---
+
 * `0-current_working_directory`: Script that prints the absolute pathname of the current working directory.
 * `1-listit`: Script that displays the contents list of current directory.
 * `2-bring_me_home`: Script that changes the working directory to the user's home directory.
