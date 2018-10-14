@@ -1,4 +1,4 @@
-Contains the following projects for the system engineering and DevOps track at [Holberton School](https://www.holbertonschool.com/):
+Contains the following four projects for the system engineering and DevOps track at [Holberton School](https://www.holbertonschool.com/):
 
 * 0x00. Shell, basics
 * 0x01. Shell, permissions
