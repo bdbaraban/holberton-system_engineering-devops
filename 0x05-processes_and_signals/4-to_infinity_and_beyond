@@ -4,6 +4,6 @@
 
 while true
 do
-  echo "To infinty and beyond"
+  echo "To infinity and beyond"
   sleep 2
 done
