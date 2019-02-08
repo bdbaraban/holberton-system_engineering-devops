@@ -1,16 +1,17 @@
 # System Engineering and DevOps - Bash
 This repository contains programs written for the system engineering and DevOps 
-track at Holberton School. In these projects, I became familiar with Shell commands and writing Bash scripts. The specific list of projects contained follows:
+track at Holberton School. In these projects, I practiced working in the Shell 
+and writing Bash scripts. The specific list of projects contained follows:
 
-* 0x00. Shell, basics
-* 0x01. Shell, permissions
-* 0x02. Shell, I/O Redirections and filters
-* 0x03. Shell, init files, variables and expansions
-* 0x04. Loops, conditions and parsing
-* 0x05. Processes and signals
+  * 0x00. Shell, basics
+  * 0x01. Shell, permissions
+  * 0x02. Shell, I/O Redirections and filters
+  * 0x03. Shell, init files, variables and expansions
+  * 0x04. Loops, conditions and parsing
+  * 0x05. Processes and signals
 
 ## Author
-* Brennan D Baraban <[bdbaraban](https://github.com/bdbaraban)> - 
+  * __Brennan D Baraban__ <[bdbaraban](https://github.com/bdbaraban)> - 
 Holberton School student
 
 ## Acknowledgements
