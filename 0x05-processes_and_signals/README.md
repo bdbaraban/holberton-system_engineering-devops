@@ -52,6 +52,9 @@ and beyond` indefinitely.
 upon receiving the `SIGQUIT` or `SIGTERM` signal.
 
 * **Manage my process**
+  * `manage_my_process`: Bash script that writes `I am alive!` to the file 
+`/tmp/my_process` indefinitely.
+    * Sleeps two seconds in between each write.
   * `101-manage_my_process`: Bash script that manages the `manage_my_process` 
 script.
   * When passed the argument `start`:
