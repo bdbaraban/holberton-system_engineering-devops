@@ -6,12 +6,9 @@
 #+    The username that scp connects with.
 #+    The path to the SSH private key that scp uses.
 
-if [ $# -lt 3 ]
+if [ $# -lt 4 ]
 then
   echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
-elif [ $# -eq 3 ]
-then
-  scp -o StrictHostKeyChecking=no "$1" "$3@$2":~
 else
   scp -o StrictHostKeyChecking=no -i "$4" "$1" "$3@$2":~
 fi
