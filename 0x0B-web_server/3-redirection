@@ -4,20 +4,19 @@
 
 apt-get update
 apt-get install -y nginx
-service nginx start
 
 mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
-echo "Holberton School" > index.html
-printf
-"server {
+echo "Holberton School" > /etc/nginx/html/index.html
+printf %s "server {
     listen 80;
-    root /etc/nginx/html;
-    index index.html;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
 
     location /redirect_me {
         return 301 http://cuberule.com/;
     }
 }" > /etc/nginx/sites-available/default
 
-nginx -s reload
+service nginx restart
