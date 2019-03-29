@@ -47,7 +47,7 @@ plus:
 
 * **5. Design a beautiful 404 page**
   * A custom-designed 404 error page for my server, accessible at
-[bdbnb.site/404](http://www.bnbnb.site/404).
+[bdbnb.site/404](http://www.bdbnb.site/404).
 
 * **6. Deploy fast, deploy well**
   * [fabfile.py](./fabfile.py): A Python Fabric configuration file defining
