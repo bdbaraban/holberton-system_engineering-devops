@@ -5,7 +5,7 @@ provided a personal server by Holberton School. I learned how to use `scp`
 and Fabric to transfer files to my server. Additionally, I completed a basic
 configuration of the server using Nginx.
 
-The server is accessible at [bdbnb.site](bdbnb.site).
+The server is accessible at [bdbnb.site](www.bdbnb.site).
 
 ## Tasks
 
@@ -47,7 +47,7 @@ plus:
 
 * **5. Design a beautiful 404 page**
   * A custom-designed 404 error page for my server, accessible at
-[bdbnb.site/404](bnbnb.site/404).
+[bdbnb.site/404](www.bnbnb.site/404).
 
 * **6. Deploy fast, deploy well**
   * [fabfile.py](./fabfile.py): A Python Fabric configuration file defining
