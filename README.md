@@ -20,6 +20,7 @@ Nginx. The specific list of projects contained follows:
   * [0x0B. Web server](./0x0B-web_server)
   * [0x0C. Web stack debugging #0](./0x0C-web_stack_debugging_0)
   * [0x0D. Configuration management](./0x0D-configuration_management)
+  * [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1)
   * [Command Line for the Win](./command_line_for_the_win)
 
 ## Author
