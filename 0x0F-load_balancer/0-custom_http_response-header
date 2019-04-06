@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Installs Nginx with the following configurations:
+#+    Contains a custom HTTP header named X-Served-By.
+#+    The value of the HTTP header is the hostname of the running server.
+
+apt-get update
+apt-get install -y nginx
+
+printf %s "server {
+    add_header X-Served-By $HOSTNAME;
+}
+" > /etc/nginx/sites-available/default
+
+service nginx restart
