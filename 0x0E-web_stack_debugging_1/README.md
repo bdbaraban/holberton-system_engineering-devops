@@ -1,10 +1,12 @@
 # Web stack debugging #1
 
-This was the first in a series of web stack debugging projects. In these
+This was the second in a series of web stack debugging projects. In these
 projects, I was given broken/bugged webstacks in the form of Docker
 containers, and tasked with fixing the web stack to a working state. For each
 task, I wrote a Bash script including the commands necessary to fix the
 web stack.
+
+## Tasks
 
 * **0. Nginx likes port 80**
   * [0-nginx_likes_port_80](./0-nginx_likes_port_80): Bash script that
