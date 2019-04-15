@@ -22,7 +22,9 @@ Nginx. The specific list of projects contained follows:
   * [0x0D. Configuration management](./0x0D-configuration_management)
   * [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1)
   * [0x10. HTTPS SSL](0x10-https_ssl)
+  * [0x11. What happens when you type holbertonschool.com in your browser and press Enter](0x11-what_happens_when_your_type_holbertonschool_com_in_your_browser_and_press_enter)
   * [0x12. Web stack debugging #2](0x12-web_stack_debugging_2)
+	* [0x13. Firewall](./0x13-firewall)
   * [Command Line for the Win](./command_line_for_the_win)
 
 ## Author
