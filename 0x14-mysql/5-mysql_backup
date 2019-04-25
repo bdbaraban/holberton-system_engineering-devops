@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Generates a compressed archive of a MySQL dump.
 mysqldump -uroot -p"$1" --all-databases > backup.sql 2>&1 | grep -v "Warning: Using a password"
-tar -cvzf "$(date +%d-%m-%y)".tar.gz backup.sql
+tar -cvzf "$(date +%d-%m-%Y)".tar.gz backup.sql
