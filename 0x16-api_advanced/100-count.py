@@ -25,7 +25,8 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
     if response.status_code == 404:
-        return None
+        print("")
+        return
 
     results = response.json().get("data")
     after = results.get("after")
@@ -40,6 +41,9 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
                     instances[word] += 1
 
     if after is None:
+        if instances == {}:
+            print("")
+            return
         instances = sorted(instances.items(), key=lambda kv: (-kv[1], kv[0]))
         [print("{}: {}".format(k, v)) for k, v in instances]
     else:
