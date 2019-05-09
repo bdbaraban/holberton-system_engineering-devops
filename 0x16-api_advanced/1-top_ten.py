@@ -18,4 +18,7 @@ def top_ten(subreddit):
         print("None")
         return
     results = response.json().get("data")
+    if results.get("dist") == 0:
+        print("None")
+        return
     [print(c.get("data").get("title")) for c in results.get("children")]
