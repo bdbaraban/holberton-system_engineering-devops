@@ -35,13 +35,14 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
         title = c.get("data").get("title").lower().split(" ")
         for word in word_list:
             if word.lower() in title:
+                times = len([w for w in word_list if w == word.lower()])
                 if instances.get(word) is None:
-                    instances[word] = 1
+                    instances[word] = times
                 else:
-                    instances[word] += 1
+                    instances[word] += times
 
     if after is None:
-        if instances == {}:
+        if len(instances) == 0:
             print("")
             return
         instances = sorted(instances.items(), key=lambda kv: (-kv[1], kv[0]))
