@@ -5,7 +5,7 @@ import requests
 
 def top_ten(subreddit):
     """Print the titles of the 10 hottest posts on a given subreddit."""
-    url = "https://www.reddit.com/r/{}/top/.json".format(subreddit)
+    url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
@@ -18,7 +18,4 @@ def top_ten(subreddit):
         print("None")
         return
     results = response.json().get("data")
-    if results.get("dist") == 0:
-        print("None")
-        return
     [print(c.get("data").get("title")) for c in results.get("children")]
