@@ -30,6 +30,7 @@ contained follows:
 * [0x14. Mysql](./0x14-mysql)
 * [0x15. API](./0x15-api)
 * [0x16. API advanced](./0x16-api_advanced)
+* [0x18. Webstack monitoring](./0x18-webstack_monitoring)
 * [Command Line for the Win](./command_line_for_the_win)
 
 ## Author :black_nib:
