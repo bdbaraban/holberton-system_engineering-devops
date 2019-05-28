@@ -1,0 +1,30 @@
+# Proxies requests on /airbnb-onepage/ to the Gunicorn app running on port 5000.
+
+server {
+    listen      80 default_server;
+    listen      [::]:80 default_server ipv6only=on;
+    server_name 104.196.168.90;
+    add_header  X-Served-By 375-web-01;
+    root        /var/www/html;
+    index       index.html index.htm;
+
+    location /airbnb-onepage/ {
+        include proxy_params;
+        proxy_pass http://localhost:5000/airbnb-onepage/;
+    }
+
+    location /hbnb_static {
+        alias /data/web_static/current;
+        index index.html index.htm;
+    }
+
+    location /redirect_me {
+        return 301 http://cuberule.com/;
+    }
+
+    error_page 404 /404.html;
+    location /404 {
+        root /var/www/html;
+        internal;
+    }
+}
