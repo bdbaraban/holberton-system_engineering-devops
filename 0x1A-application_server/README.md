@@ -20,3 +20,19 @@ Upstart script to keep the application running on server reboots.
   * [2-app_server-nginx_config](./2-app_server-nginx_config): Nginx configuration file
   proxying requests to the route `/airbnb-onepage/` to the Gunicorn app running on
   port `5000`.
+
+* **3. Add a route with query parameters**
+  * [3-app_server-nginx_config](./3-app_server-nginx_config): Nginx configuration file
+  proxying requests on the route `/airbnb-dynamic/number_odd_or_even/<int: num>` to the
+  Gunicorn app running on port `5000`.
+
+* **4. Let's do this for your API**
+  * In this task, I configured the API from my [AirBnB_clone_v3](./https://github.com/Ostoyae/AirBnB_clone_v3) to run on Gunicorn.
+  * [4-app_server-nginx_config](./4-app_server-nginx_config): Nginx configuration file
+  that proxies requests to the AirBnB API to the corresponding Gunicorn app.
+
+* **5. Serve your AirBnB clone**
+  * In this task, I configured the complete AirBnB app from [AirBnB_clone_v4](https://github.com/bdbaraban/AirBnB_clone_v4) to run on Gunicorn.
+  * [5-app_server-nginx_config](./5-app_server-nginx_config): Nginx configuration file
+  configured to serve the static assets from `web_dynamic/static/` on the Gunicorn AirBnB
+  app.
