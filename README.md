@@ -33,6 +33,7 @@ contained follows:
 * [0x17. Web stack debugging #3](./0x17-web_stack_debugging_3)
 * [0x18. Webstack monitoring](./0x18-webstack_monitoring)
 * [0x19. Postmortem](./0x19-postmortem)
+* [0x1A. Application server](./0x1A-application_server)
 * [Command Line for the Win](./command_line_for_the_win)
 
 ## Author :black_nib:
