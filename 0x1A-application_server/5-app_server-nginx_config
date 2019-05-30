@@ -11,17 +11,17 @@ server {
     # Customize HTTP response header
     add_header  X-Served-By 375-web-01;
 
-    # Serve /airbnb-onepage/ route on AirBnB_clone_v4
+    # Serve /airbnb-onepage/ route on AirBnB_clone_v2
     location = /airbnb-onepage/ {
         proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
     }
 
-    # Serve /number_odd_or_even/ route on AirBnB_clone_v4
+    # Serve /number_odd_or_even/ route on AirBnB_clone_v2
     location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
         proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
     }
 
-    # Serve AirBnB_clone_v4 API
+    # Serve AirBnB_clone_v3 API
     location /api {
         proxy_pass http://127.0.0.1:5002/api;
     }
@@ -32,8 +32,8 @@ server {
     }
 
     # Serve static content for AirBnB_clone_v4
-    location /static/ {
-        root /home/ubuntu/AirBnB_clone_v4/web_dynamic;
+    location /static {
+        proxy_pass http://127.0.0.1:5003;
     }
 
     # 404 error page
