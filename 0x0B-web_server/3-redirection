@@ -5,18 +5,19 @@
 apt-get update
 apt-get install -y nginx
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-echo "Holberton School" > /etc/nginx/html/index.html
-printf %s "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.htm;
+echo "Holberton School" > /var/www/html/index.html
 
-    location /redirect_me {
-        return 301 http://cuberule.com/;
-    }
-}" > /etc/nginx/sites-available/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+
+printf %s "server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html/;
+	index index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
+
+
+sed  -i '6i location /redirect_me { return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;}' /etc/nginx/sites-available/default
 
 service nginx restart
